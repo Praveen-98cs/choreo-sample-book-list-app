@@ -4,6 +4,7 @@ endpoints:
   - name: books-rest-endpoint-d70
     displayName: Books REST Endpoint
     port: 8080
+    context: /reading-list
     service:
       basePath: /reading-list
     type: REST
