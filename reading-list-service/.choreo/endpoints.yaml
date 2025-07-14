@@ -1,14 +1,12 @@
-version: 0.1
 schemaVersion: "1.2"
 endpoints:
-  - name: books-rest-endpoint-d70
-    displayName: Books REST Endpoint
-    port: 8080
-    context: /reading-list
-    service:
-      basePath: /reading-list
-    type: REST
-    networkVisibilities:
-      - Project
-      - Public
-    schemaFilePath: openapi.yaml
+    - name: books-rest-endpoint-d70-d70
+      displayName: books-rest-endpoint-d70
+      service:
+        basePath: /reading-list
+        port: 8080
+      type: REST
+      networkVisibilities:
+        - Project
+        - Public
+      schemaFilePath: openapi.yaml
